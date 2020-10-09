@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>千葉県で新車・中古車・新古車をお探しをお探しなら【ツチヤ自動車】</title>
+    <link href="../slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="../src/css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- --- -->
+    <div class="header">
+      <a href="../index.html" class="header_link">
+        <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+        <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+      </a>
+    </div>
+    <div id="nav">
+      <ul class="nav_link">
+        <li class="nav_link_light"><a><img src="../img/gnav_anniversary.svg"></a></li>
+        <li class="nav_link_dark"><a><img src="../img/gnav_campaign.svg"></a></li>
+        <li class="nav_link_light"><a href="../search/index.html"><img src="../img/gnav_stock.svg"></a></li>
+        <li class="nav_link_dark"><a href="../company/index.html"><img src="../img/gnav_company.svg"></a></li>
+        <li class="nav_link_dark"><a href="../recruit/index.html"><img src="../img/gnav_recruit.svg"></a></li>
+        <li class="nav_link_light"><a href="../contact/index.html"><img src="../img/gnav_contact.svg"></a></li>
+        <li class="nav_link_dark"><a><img src="../img/gnav_shopping.svg"></a></li>
+        <li class="nav_link_light"></li>
+      </ul>
+      <a href="#" id="nav_click"></a>
+    </div>
+     <!-- --- -->
+    <div class="contents">
+      <div class="contact">
+        <h1 class="contact_ttl"><img src="../img/ttl_contact01.svg" alt=""></h1>
+        <div class="contact_reservation">
+          <h2 class="contact_reservation_ttl">来店予約</h2>
+          <div class="contact_reservation_body">
+            <form>
+              <div class="formlist">
+                <dl>
+                  <dt>お名前</dt>
+                  <dd>
+                    <div class="formlist_inner two"><input type="text" placeholder="姓"></div>
+                    <div class="formlist_inner two"><input type="text" placeholder="名"></div>
+                  </dd>
+                  <dt>お名前フリガナ</dt>
+                  <dd>
+                    <div class="formlist_inner two"><input type="text" placeholder="セイ"></div>
+                    <div class="formlist_inner two"><input type="text" placeholder="メイ"></div>
+                  </dd>
+                  <dt>メールアドレス</dt>
+                  <dd>
+                    <div class="formlist_inner"><input type="text" placeholder="tsuchiya-cars@xx.xx.jp"></div>
+                  </dd>
+                  <dt>電話番号</dt>
+                  <dd>
+                    <div class="formlist_inner"><input type="text" placeholder="043xxxxxxx"></div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="formlist">
+                <h3 class="formlist_ttl">来店予約</h3>
+                <dl>
+                  <dt>ご来店予定店舗</dt>
+                  <dd>
+                    <div class="formlist_select shop">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーーー</option>
+                          <option>新小岩</option>
+                          <option>成田</option>
+                          <option>茂原</option>
+                        </select>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>ご来店予定日時</dt>
+                  <dd>
+                    <div class="formlist_select date">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーー</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="formlist_select date">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーー</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="formlist_select date">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーー</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="formlist_select date">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーー</option>
+                          <option>09:30</option>
+                          <option>10:00</option>
+                          <option>10:30</option>
+                        </select>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>ご来店理由</dt>
+                  <dd>
+                    <div class="formlist_check"><input type="checkbox" id="buy_car"><label for="buy_car">お車購入</label></div>
+                    <div class="formlist_check"><input type="checkbox" id="maintenance"><label for="maintenance">メンテナンス</label></div>
+                    <div class="formlist_check"><input type="checkbox" id="inspection"><label for="inspection">車検</label></div>
+                    <div class="formlist_check"><input type="checkbox" id="assessment"><label for="assessment">お車査定</label></div>
+                    <div class="formlist_check"><input type="checkbox" id="other"><label for="other">その他</label></div>
+                    <div class="formlist_textarea"><textarea placeholder="(最大200文字まで)" maxlength="200"></textarea></div>
+                  </dd>
+                  <dt>ご来店回数</dt>
+                  <dd>
+                    <div class="formlist_select">
+                      <div class="formlist_select_inner">
+                        <select>
+                          <option selected>ーーー</option>
+                          <option>はじめて</option>
+                          <option>2~5回</option>
+                          <option>6~9回</option>
+                        </select>
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>当店での購入の有無</dt>
+                  <dd>
+                    <div class="formlist_radio"><input type="radio" id="yes" class="js_radiobtn" name="storebuy" value="y"><label for="yes">あり</label></div>
+                    <div class="formlist_radio"><input type="radio" id="no" class="js_radiobtn" name="storebuy" value="n"><label for="no">なし</label></div>
+                  </dd>
+                  <dt>当店での担当者</dt>
+                  <dd>
+                    <div class="formlist_radio"><input type="radio" id="person_yes" name="person" value="y"><label for="person_yes">あり</label></div>
+                    <div class="formlist_inner person"><input type="text" placeholder="担当者名"></div>
+                    <div class="formlist_radio"><input type="radio" id="person_no" name="person" value="y"><label for="person_no">なし</label></div>
+                  </dd>
+                  <dt>問い合わせ内容</dt>
+                  <dd>
+                    <div class="formlist_textarea"><textarea placeholder="(最大200文字まで)" maxlength="200"></textarea></div>
+                  </dd>
+                </dl>
+              </div>
+            </form>
+            <a href="#" class="contact_reservation_body_sure">確認画面へ</a href="#">
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- --- -->
+    <div class="footer">
+      <div class="footer_totop"><img src="../img/totop.svg"></div>
+      <ul class="footer_sns">
+        <li><a href=""><img src="../img/blog.svg"></a></li>
+        <li><a href=""><img src="../img/page.svg"></a></li>
+        <li><a href=""><img src="../img/tweet.svg"></a></li>
+        <li><a href=""><img src="../img/fb.png"></a></li>
+        <li><a href=""><img src="../img/inst.png"></a></li>
+      </ul>
+      <p class="footer_txt">privacypolicy</p>
+      <p class="footer_adress">&copy;Tsuchiya Car's All Right Reserved.</p>
+    </div>
+<script src="../js/common.js"></script>
+  </body>
+</html>
+    

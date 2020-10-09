@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>千葉県で新車・中古車・新古車をお探しをお探しなら【ツチヤ自動車】</title>
+    <link href="../slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="../slick/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../src/css/search.css">
+    <link rel="stylesheet" href="../src/css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- --- -->
+    <div class="header">
+      <a href="../index.html" class="header_link">
+        <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+        <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+      </a>
+      <a href="#" class="header_contact"><img src="../img/icon_headcontact.png"></a>
+      <a href="#" class="header_search"><img src="../img/search.png"></a>
+    </div>
+
+     <!-- --- -->
+     <div class="contents">
+      <div class="contents_slide">
+       <ul>
+         <li class="contents_slide_item"><a href="#"><img src="../img/bnr_newarrival.png"></a></li>
+         <li class="contents_slide_item"><a href="#"><img src="../img/bnr_tsuchiya01.jpg"></a></li>
+         <li class="contents_slide_item"><a href="#"><img src="../img/bnr_tsuchiya02.png"></a></li>
+         <li class="contents_slide_item"><a href="#"><img src="../img/bnr_tsuchiya04.jpg"></a></li>
+         <li class="contents_slide_item"><a href="#"><img src="../img/bnr_tsuchiya03.jpg"></a></li>
+       </ul>
+      </div>
+
+      <div class="search">
+        <ul>
+          <li class="search_item"><a href="#" class="name"></a></li>
+          <li class="search_item"><a href="#" class="type"></a></li>
+          <li class="search_item"><a href="#" class="price"></a></li>
+          <li class="search_item"><a href="#" class="conditions"></a></li>
+        </ul>
+      </div>
+
+      <div class="selects name hidden">
+        <div class="selects_header">
+          <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+          <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+          <figure class="close_btn name"></figure>
+        </div>
+        <div class="selects_list name">
+          <h3 class="ttl">メーカー<span>(複数選択可)</span></h3>
+          <ul>
+            <li class="selects_list_item toyota"><input type="checkbox" name="maker" value="トヨタ" id="toyota"><label for="toyota">トヨタ</label></li>
+            <li class="selects_list_item lexus"><input type="checkbox" name="maker" value="レクサス" id="lexus"><label for="lexus">レクサス</label></li>
+            <li class="selects_list_item nissan"><input type="checkbox" name="maker" value="日産" id="nissan"><label for="nissan">日産</label></li>
+            <li class="selects_list_item honda"><input type="checkbox" name="maker" value="ホンダ" id="honda"><label for="honda">ホンダ</label></li>
+            <li class="selects_list_item suzuki"><input type="checkbox" name="maker" value="スズキ" id="suzuki"><label for="suzuki">スズキ</label></li>
+            <li class="selects_list_item daihatsu"><input type="checkbox" name="maker" value="ダイハツ" id="daihatsu"><label for="daihatsu">ダイハツ</label></li>
+            <li class="selects_list_item mazda"><input type="checkbox" name="maker" value="マツダ" id="mazda"><label for="mazda">マツダ</label></li>
+            <li class="selects_list_item subaru"><input type="checkbox" name="maker" value="スバル" id="subaru"><label for="subaru">スバル</label></li>
+            <li class="selects_list_item mitsubisi"><input type="checkbox" name="maker" value="三菱" id="mitsubisi"><label for="mitsubisi">三菱</label></li>
+            <li class="selects_list_item isuzu"><input type="checkbox" name="maker" value="イスズ" id="isuzu"><label for="isuzu">イスズ</label></li>
+            <li class="selects_list_item mitsuoka"><input type="checkbox" name="maker" value="ミツオカ" id="mitsuoka"><label for="mitsuoka">ミツオカ</label></li>
+            <li class="selects_list_item yunyuu"><input type="checkbox" name="maker" value="輸入車" id="yunyuu"><label for="yunyuu">輸入車</label></li>
+          </ul>
+          <h3 class="ttl">車名<span>(複数選択可)</span></h3>
+          <div class="car_name">
+            <button type="button" class="btn">
+              <input type="text" class="placeholder" autocomplete="off" name="carName" placeholder="車名を選択又は入力してください" value>
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </button>
+            <ul class="car_name_list hidden">
+              <li><label><input type="checkbox">86</label></li>
+              <li><label><input type="checkbox">AZﾜｺﾞﾝ</label></li>
+              <li><label><input type="checkbox">bB</label></li>
+              <li><label><input type="checkbox">BMW_X1</label></li>
+            </ul>
+          </div>
+          <div class="selects_list_btn">
+            <div class="selects_list_btn_delete">条件クリア</div>
+            <div class="selects_list_btn_search"><img src="../img/icon_search.png"><p>検索する</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selects type hidden">
+        <div class="selects_header">
+          <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+          <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+          <figure class="close_btn type"></figure>
+        </div>
+        <div class="selects_list body">
+          <h3 class="ttl">ボディタイプ<span>(複数選択可)</span></h3>
+          <ul>
+            <li class="selects_list_item light"><input type="checkbox" name="maker" value="軽自動車" id="light"><label for="light">軽自動車</label></li>
+            <li class="selects_list_item compact"><input type="checkbox" name="maker" value="コンパクト" id="compact"><label for="compact">コンパクト</label></li>
+            <li class="selects_list_item mini"><input type="checkbox" name="maker" value="ミニバン" id="mini"><label for="mini">ミニバン/<br>ワンボックス</label></li>
+            <li class="selects_list_item suv"><input type="checkbox" name="maker" value="SUV" id="suv"><label for="suv">SUV/4WD</label></li>
+            <li class="selects_list_item sedan"><input type="checkbox" name="maker" value="セダン" id="sedan"><label for="sedan">セダン</label></li>
+            <li class="selects_list_item sport"><input type="checkbox" name="maker" value="スポーツ" id="sport"><label for="sport">スポーツ/<br>クーべ</label></li>
+            <li class="selects_list_item station"><input type="checkbox" name="maker" value="ステーション" id="station"><label for="station">ステーション<br>ワゴン</label></li>
+            <li class="selects_list_item pan"><input type="checkbox" name="maker" value="パン" id="pan"><label for="pan">パン/トラック</label></li>
+          </ul>
+          <div class="selects_list_btn">
+            <div class="selects_list_btn_delete">条件クリア</div>
+            <div class="selects_list_btn_search"><img src="../img/icon_search.png"><p>検索する</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selects price hidden">
+        <div class="selects_header">
+          <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+          <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+          <figure class="close_btn price"></figure>
+        </div>
+        <div class="selects_list price">
+          <h3 class="ttl">販売価格</h3>
+          <div class="selects_list_price">
+            <label id="price_start">
+              <select>
+                <option value>指定なし</option>
+                <option value>0円</option>
+                <option value>30万円</option>
+                <option value>50万円</option>
+              </select>
+            </label>
+            <span>〜</span>
+            <label id="price_end">
+              <select>
+                <option value>指定なし</option>
+                <option value>0円</option>
+                <option value>30万円</option>
+                <option value>50万円</option>
+              </select>
+            </label>
+          </div>
+        </div>
+          <div class="selects_list_btn">
+            <div class="selects_list_btn_delete">条件クリア</div>
+            <div class="selects_list_btn_search"><img src="../img/icon_search.png"><p>検索する</p></div>
+          </div>
+      </div>
+
+      <div class="selects conditions hidden">
+        <div class="selects_header">
+          <figure class="header_link_img"><img src="../img/logo_handle_white.svg"></figure>
+          <h1 class="header_link_ttl"><img src="../img/logo_white.svg"></h1>
+          <figure class="close_btn conditions"></figure>
+        </div>
+        <div class="selects_list body">
+          <h3 class="ttl maker">メーカー<span>(複数選択可)</span></h3>
+          <ul>
+            <li class="selects_list_item toyota"><input type="checkbox" name="maker" value="トヨタ" id="toyota2"><label for="toyota2">トヨタ</label></li>
+            <li class="selects_list_item lexus"><input type="checkbox" name="maker" value="レクサス" id="lexus2"><label for="lexus2">レクサス</label></li>
+            <li class="selects_list_item nissan"><input type="checkbox" name="maker" value="日産" id="nissan2"><label for="nissan2">日産</label></li>
+            <li class="selects_list_item honda"><input type="checkbox" name="maker" value="ホンダ" id="honda2"><label for="honda2">ホンダ</label></li>
+            <li class="selects_list_item suzuki"><input type="checkbox" name="maker" value="スズキ" id="suzuki2"><label for="suzuki2">スズキ</label></li>
+            <li class="selects_list_item daihatsu"><input type="checkbox" name="maker" value="ダイハツ" id="daihatsu2"><label for="daihatsu2">ダイハツ</label></li>
+            <li class="selects_list_item mazda"><input type="checkbox" name="maker" value="マツダ" id="mazda2"><label for="mazda2">マツダ</label></li>
+            <li class="selects_list_item subaru"><input type="checkbox" name="maker" value="スバル" id="subaru2"><label for="subaru2">スバル</label></li>
+            <li class="selects_list_item mitsubisi"><input type="checkbox" name="maker" value="三菱" id="mitsubisi2"><label for="mitsubisi2">三菱</label></li>
+            <li class="selects_list_item isuzu"><input type="checkbox" name="maker" value="イスズ" id="isuzu2"><label for="isuzu2">イスズ</label></li>
+            <li class="selects_list_item mitsuoka"><input type="checkbox" name="maker" value="ミツオカ" id="mitsuoka2"><label for="mitsuoka2">ミツオカ</label></li>
+            <li class="selects_list_item yunyuu"><input type="checkbox" name="maker" value="輸入車" id="yunyuu2"><label for="yunyuu2">輸入車</label></li>
+          </ul>
+          <h3 class="ttl car">車名<span>(複数選択可)</span></h3>
+          <div class="car_name">
+            <button type="button" class="btn conditions">
+              <input type="text" class="placeholder" autocomplete="off" name="carName" placeholder="車名を選択又は入力してください" value>
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </button>
+            <ul class="car_name_list conditions hidden">
+              <li><label><input type="checkbox">86</label></li>
+              <li><label><input type="checkbox">AZﾜｺﾞﾝ</label></li>
+              <li><label><input type="checkbox">bB</label></li>
+              <li><label><input type="checkbox">BMW_X1</label></li>
+            </ul>
+          </div>
+            <h3 class="ttl">ボディタイプ<span>(複数選択可)</span></h3>
+            <ul>
+              <li class="selects_list_item light"><input type="checkbox" name="maker" value="軽自動車" id="light2"><label for="light2">軽自動車</label></li>
+              <li class="selects_list_item compact"><input type="checkbox" name="maker" value="コンパクト" id="compact2"><label for="compact2">コンパクト</label></li>
+              <li class="selects_list_item mini"><input type="checkbox" name="maker" value="ミニバン" id="mini2"><label for="mini2">ミニバン/<br>ワンボックス</label></li>
+              <li class="selects_list_item suv"><input type="checkbox" name="maker" value="SUV" id="suv2"><label for="suv2">SUV/4WD</label></li>
+              <li class="selects_list_item sedan"><input type="checkbox" name="maker" value="セダン" id="sedan2"><label for="sedan2">セダン</label></li>
+              <li class="selects_list_item sport"><input type="checkbox" name="maker" value="スポーツ" id="sport2"><label for="sport2">スポーツ/<br>クーべ</label></li>
+              <li class="selects_list_item station"><input type="checkbox" name="maker" value="ステーション" id="station2"><label for="station2">ステーション<br>ワゴン</label></li>
+              <li class="selects_list_item pan"><input type="checkbox" name="maker" value="パン" id="pan2"><label for="pan2">パン/トラック</label></li>
+            </ul>
+            <h3 class="ttl">ピックアップ<span>(複数選択可)</span></h3>
+            <ul>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="new"><label for="new">新着(3ヶ月以内)</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="pricwdown"><label for="pricwdown">プライスダウン</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="nouse"><label for="nouse">未使用車</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="ehco"><label for="ehco">エコカー<br>(EV、ハイブリッド、 PHV)</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="woman"><label for="woman">女性向け</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="welfare"><label for="welfare">福祉車</label></li>
+            </ul>
+            <h3 class="ttl price">販売価格</h3>
+            <div class="selects_list_price">
+              <label id="price_start2">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>0円</option>
+                  <option value>30万円</option>
+                  <option value>50万円</option>
+                </select>
+              </label>
+              <span>〜</span>
+              <label id="price_end2">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>0円</option>
+                  <option value>30万円</option>
+                  <option value>50万円</option>
+                </select>
+              </label>
+            </div>
+            <h3 class="ttl distance">走行距離</h3>
+            <div class="selects_list_price">
+              <label id="distance_start">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>0km</option>
+                  <option value>10,000km</option>
+                  <option value>30,000km</option>
+                </select>
+              </label>
+              <span>〜</span>
+              <label id="distance_end">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>0km</option>
+                  <option value>10,000km</option>
+                  <option value>30,000km</option>
+                </select>
+              </label>
+            </div>
+            <h3 class="ttl year">年式</h3>
+            <div class="selects_list_price">
+              <label id="year_start">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>令和2年</option>
+                  <option value>令和1年</option>
+                  <option value>平成30年</option>
+                </select>
+              </label>
+              <span>〜</span>
+              <label id="year_end">
+                <select>
+                  <option value>指定なし</option>
+                  <option value>令和2年</option>
+                  <option value>令和1年</option>
+                  <option value>平成30年</option>
+                </select>
+              </label>
+            </div>
+            <h3 class="ttl">店舗</h3>
+            <ul>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="ichikawa"><label for="ichikawa">市川店/市川2号店</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="sinkoiwa"><label for="sinkoiwa">新小岩店</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="tibakita"><label for="tibakita">千葉北店</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="narita"><label for="narita">成田店</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="togane"><label for="togane">東金店</label></li>
+              <li class="selects_list_item other"><input type="checkbox" name="maker" id="mobara"><label for="mobara">茂原店</label></li>
+            </ul>
+          <div class="selects_list_btn">
+            <div class="selects_list_btn_delete">条件クリア</div>
+            <div class="selects_list_btn_search"><img src="../img/icon_search.png"><p>検索する</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="type_open close">
+
+      </div>
+
+      <div class="price_open close">
+
+      </div>
+
+      <div class="conditions_open close">
+
+      </div>
+
+      <div class="keyword">
+        <input class="keyword_form" type="text" name="text" value placeholder="キーワードを探す">
+        <input class="keyword_submit" type="submit" value>
+      </div>
+
+      <div class="price_down">
+       <h2 class="price_down_ttl"><img src="../img/txt_pricedown.png"></h2>
+       <div class="price_down_list">
+         <ul>
+           <li class="price_down_list_item">
+             <div class="price_down_list_item_header">
+               <p class="left">8</p>
+               <p class="right">市川店</p>
+             </div>
+             <a href="#" class="price_down_list_item_article">
+              <img src="../img/aru.jpg" alt>
+              <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+              <p class="distance">走行距離：3,740km</p>
+              <p class="year">H31年式</p>
+              <div class="price">
+                <p class="price_past">668.8</p>
+                <p class="price_now"><img src="../img/img_price-down.svg" alt>659.8</p>
+                <p>万円(税込)</p>
+              </div>
+              <p class="time_limit">あと3日</p>
+             </a>
+             <a href="#" class="price_down_list_item_add"></a>
+            </li>
+           <li class="price_down_list_item">
+            <div class="price_down_list_item_header">
+              <p class="left">8</p>
+              <p class="right">市川店</p>
+            </div>
+             <a href="#" class="price_down_list_item_article">
+              <img src="../img/mitsubishi.jpg" alt>
+              <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+              <p class="distance">走行距離：3,740km</p>
+              <p class="year">H31年式</p>
+              <div class="price">
+                <p class="price_past">668.8</p>
+                <p class="price_now"><img src="../img/img_price-down.svg" alt>659.8</p>
+                <p>万円(税込)</p>
+              </div>
+              <p class="time_limit">あと3日</p>
+             </a>
+             <a href="#" class="price_down_list_item_add"> </a>
+            </li>
+           <li class="price_down_list_item">
+            <div class="price_down_list_item_header">
+              <p class="left">8</p>
+              <p class="right">市川店</p>
+            </div>
+             <a href="#" class="price_down_list_item_article">
+              <img src="../img/derika_black.jpg" alt>
+              <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+              <p class="distance">走行距離：3,740km</p>
+              <p class="year">H31年式</p>
+              <div class="price">
+                <p class="price_past">668.8</p>
+                <p class="price_now"><img src="../img/img_price-down.svg" alt>659.8</p>
+                <p>万円(税込)</p>
+              </div>
+              <p class="time_limit">あと3日</p>
+             </a>
+             <a href="#" class="price_down_list_item_add"></a>
+            </li>
+
+           <li class="price_down_list_item">
+            <div class="price_down_list_item_header">
+              <p class="left">8</p>
+              <p class="right">市川店</p>
+            </div>
+
+             <a href="#" class="price_down_list_item_article">
+              <img src="../img/vuleru.jpg" alt>
+              <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+              <p class="distance">走行距離：3,740km</p>
+              <p class="year">H31年式</p>
+              <div class="price">
+                <p class="price_past">668.8</p>
+                <p class="price_now"><img src="../img/img_price-down.svg" alt>659.8</p>
+                <p>万円(税込)</p>
+              </div>
+              <p class="time_limit">あと3日</p>
+             </a>
+
+             <a href="#" class="price_down_list_item_add"></a>
+            </li>
+         </ul>
+       </div>
+
+       <div class="price_down_btn">もっと見る</div>
+      </div>
+ 
+      <div class="new_arrival">
+       <h2 class="new_arrival_ttl"><img src="../img/txt_newarrival.png"></h2>
+       <div class="price_down_list">
+        <ul>
+          <li class="new_arrival_list_item">
+            <div class="new_arrival_list_item_header">
+              <p class="left">8</p>
+              <p class="right">市川店</p>
+            </div>
+            <a href="#" class="new_arrival_list_item_article">
+             <img src="../img/premashi.jpg" alt>
+             <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+             <p class="distance">走行距離：3,740km</p>
+             <p class="year">H31年式</p>
+             <div class="price">
+               <p class="price_now">659.8</p>
+               <p>万円(税込)</p>
+             </div>
+            </a>
+            <a href="#" class="new_arrival_list_item_add"></a>
+           </li>
+          <li class="new_arrival_list_item">
+           <div class="new_arrival_list_item_header">
+             <p class="left">8</p>
+             <p class="right">市川店</p>
+           </div>
+            <a href="#" class="new_arrival_list_item_article">
+             <img src="../img/n-wgn.jpg" alt>
+             <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+             <p class="distance">走行距離：3,740km</p>
+             <p class="year">H31年式</p>
+             <div class="price">
+               <p class="price_now">659.8</p>
+               <p>万円(税込)</p>
+             </div>
+            </a>
+            <a href="#" class="new_arrival_list_item_add"> </a>
+           </li>
+          <li class="new_arrival_list_item">
+           <div class="new_arrival_list_item_header">
+             <p class="left">8</p>
+             <p class="right">市川店</p>
+           </div>
+            <a href="#" class="new_arrival_list_item_article">
+             <img src="../img/vulittsu5d.jpg" alt>
+             <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+             <p class="distance">走行距離：3,740km</p>
+             <p class="year">H31年式</p>
+             <div class="price">
+               <p class="price_now">659.8</p>
+               <p>万円(税込)</p>
+             </div>
+            </a>
+            <a href="#" class="new_arrival_list_item_add"></a>
+           </li>
+
+          <li class="new_arrival_list_item">
+           <div class="new_arrival_list_item_header">
+             <p class="left">8</p>
+             <p class="right">市川店</p>
+           </div>
+
+            <a href="#" class="new_arrival_list_item_article">
+             <img src="../img/note.jpg" alt>
+             <p class="explanation">トヨタ&nbsp;アルファード&nbsp;ＳＣ&nbsp;1オーナーフリップDモニタ12セグMナビBカメ両AドアLED</p>
+             <p class="distance">走行距離：3,740km</p>
+             <p class="year">H31年式</p>
+             <div class="price">
+               <p class="price_now">659.8</p>
+               <p>万円(税込)</p>
+             </div>
+            </a>
+
+            <a href="#" class="new_arrival_list_item_add"></a>
+           </li>
+        </ul>
+      </div>
+      <div class="new_arrival_btn">もっと見る</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#top" class="to_top">TOP</a>
+    <ul>
+      <li class="footer_item home"><a href="../index.html"></a></li>
+      <li class="footer_item company"><a href="../company/index.html"></a></li>
+      <li class="footer_item favorite"><a href="#"></a></li>
+      <li class="footer_item offcial"><a href="#"></a></li>
+    </ul>
+    <div class="footer_offcial">
+      <a href="#" class="footer_offcial_item blog">a</a>
+      <a href="#" class="footer_offcial_item manage">b</a>
+      <a href="#" class="footer_offcial_item tweet">c</a>
+      <a href="#" class="footer_offcial_item face">d</a>
+      <a href="#" class="footer_offcial_item insta">e</a>
+    </div>
+  </div>
+
+
+    
+<script src="../js/search.js"></script>
+  </body>
+</html>
