@@ -41,7 +41,7 @@ const defaultDataset = {
         answers: [
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "git@github.com:ryota4729/mobileFirst.git",
+        question: "https://github.com/ryota4729/chatbot.git",
     },
     "like": {
         answers: [
