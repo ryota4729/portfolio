@@ -1,0 +1,21 @@
+.main{
+  width: calc(100%-250px);
+  margin-left: 250px;
+}
+
+.mainImg{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mainImg li{
+  width: 32%;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.mainImg img{
+  width: 100%;
+}
