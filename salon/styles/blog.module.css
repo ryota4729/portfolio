@@ -1,0 +1,70 @@
+.main{
+  margin-left: 250px;
+  width: calc(100%-250px);
+}
+
+.mainHeader{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainHeader img{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+}
+
+.mainBlog{
+  margin: 60px 0;
+}
+
+.mainBlog h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: inherit;
+  font-weight: 200;
+  color: #333;
+  letter-spacing: 0.1rem;
+  margin-bottom: 60px;
+}
+
+.mainBlogStaff{
+  font-family: inherit;
+  font-size: 13px;
+  color: #333;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.mainBlogStaff h3{
+  margin: 40px 0;
+  letter-spacing: 0.1rem;
+  font-family: emoji;
+  font-size: 15px;
+}
+
+.mainBlogList{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mainBlogList li{
+  width: 40%;
+  list-style: none;
+}
+
+.mainBlogList li img{
+  width: 100%;
+}
+
+.mainBlogList li p{
+  text-align: center;
+  font-weight: bold;
+  font-family: initial;
+  margin: 10px 0;
+}

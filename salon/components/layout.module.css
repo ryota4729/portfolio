@@ -1,0 +1,92 @@
+.menu{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 250px;
+  background-color: #fff;
+  z-index: 100;
+}
+.menu h1{
+  margin-top: 40px;
+}
+
+.menu h1 img{
+  display: block;
+  width: 70px;
+  height: 43px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.menuList{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.menuList li{
+  list-style: none;
+  width: 100%;
+  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+}
+
+.menuList li a{
+  text-decoration: none;
+  color: #888;
+  -webkit-font-smoothing: antialiased;
+}
+
+.menuList li a:hover{
+  text-decoration: none;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.munuReservation{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.munuReservation a{
+  color: #fff;
+  background-color: #616060;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.menuInfo{
+  width: 80%;
+  margin: 20px auto;
+  position: absolute;
+  bottom: 3%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.menuInfo a{
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menuInfo a img{
+  width: 20px;
+}
+
+.menuInfo p{
+  font-size: 10px;
+  color: #888;
+  margin: 3px 0;
+  text-align: center;
+}
+
+.menuInfo p:last-child{
+  margin-top: 10px;
+}
